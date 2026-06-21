@@ -5,6 +5,9 @@
       <ImageToGif v-if="mode === 'image'" />
       <VideoToGif v-else />
     </main>
+    <footer class="footer">
+      <span>QQ群：1051068329  作者：尼可</span>
+    </footer>
   </div>
 </template>
 
@@ -30,5 +33,13 @@ const mode = ref('image')
   width: 100%;
   margin: 0 auto;
   padding: 24px 20px 40px;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
 }
 </style>

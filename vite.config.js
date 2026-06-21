@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), cloudflare()],
   server: {
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
